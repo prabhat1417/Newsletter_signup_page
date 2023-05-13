@@ -27,10 +27,10 @@ app.post("/", function (req, res) {
   };
 
   const jsonData = JSON.stringify(data);
-  const url = 'https://us21.api.mailchimp.com/3.0/lists/aeb9684b8d' //  Audience ID
+  const url = 'https://us21.api.mailchimp.com/3.0/lists/audienceID' //  Audience ID
   const options = {
     method: "POST",
-    auth: "Prabhat:29fe663d6b9dc5cc7f4ef17d6f4f6d3e-us21" // API key (us21 must be in const url)
+    auth: "API key" // API key (us21 must be in const url)
   };
 
   const request = https.request(url, options, function (response) {
@@ -59,6 +59,3 @@ app.listen(3000, function () {
 
 
 
-// 29fe663d6b9dc5cc7f4ef17d6f4f6d3e-us21
-
-// aeb9684b8d
